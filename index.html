@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCards</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navigation">
+        <div class="header">
+        <div class="logo">
+            <picture>
+                <source media="(max-width: 1024px)" srcset="./assets/puzzle.png">
+                 <source media="(max-width: 600px)" srcset="./assets/puzzle.png">
+                 <img src="./assets/puzzle.png" style="width: 30px; height: 30px;"/>
+            </picture>
+        </div>
+            <div class="project-name">MindCards</div>
+        </div>
+        
+
+        <ul class="menu">
+            <li>About Us</li>
+            <li>How It Works</li>
+        </ul>
+
+        <div class="get-started">
+            <button class="getStarted_button">Get Started</button>
+        </div>
+    </nav>
+      
+
+    <div class="first_p">
+        <h4 class="first_header">Start learning with <br>
+            free digital flashcards.</h4>
+        <h6 class="first_par">Welcome to MindCards - your ultimate online 
+            flashcard resource for effective studying, exam preparation, <br>
+            and boosting your memory power. We are dedicated to providing 
+            a convenient and efficient platform <br> that empowers students 
+            like you to take control of your learning journey.</h6>
+    </div>
+
+    <div class="second_page">
+        <div class="container_counts">
+        
+            <div class="inputs_1">
+                <input type="text" id="questionInput" class="flashcard-question" placeholder=" Side A / Question" />
+                <input type="text" id="answerInput" class="flashcard-answer" placeholder=" Side B / Answer" />
+                <button class="addButton" id="addButton">add</button>
+            </div>
+
+            <div id="counter" class="counter_line">
+
+            </div>
+        </div>
+
+        <button class="start_button" id="startButton">start</button>
+
+    </div>
+
+
+<div class="learning">
+
+    <div class="card">
+        <div class="card__inner">
+            <div class="card__face card__face--front">
+                <h2 id="questionText"></h2>
+            </div>
+    
+    
+            <div class="card__face card__face--back">
+                <h2 id="answerText"></h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="learning-features">
+        <button class="startOver">start over</button>
+        <button class="dontKnowButton">keep learning</button>
+        <button class="knowButton">know</button>
+    </div>
+    
+</div>
+
+
+<div class="footer">
+
+    <ul class="items">
+        <li class="li">© 2023 MindCards Inc.</li>
+        <li class="li">Terms & conditions</li>
+        <li class="li">Privacy policy</li>
+        <li class="li">Cookie policy</li>
+        
+        <li class="li">
+        <picture>
+            <source media="(max-width: 786px)" srcset="./assets/instagram.png">
+             <source media="(min-width: 1200px)" srcset="./assets/instagram.png">
+        <img src="./assets/instagram.png">
+        </picture>
+    </li>
+
+        <li class="li">
+        <picture>
+        <source media="(max-width: 786px)" srcset="./assets/twitter.png">
+         <source media="(min-width: 1200px)" srcset="./assets/twitter.png">
+        <img src="./assets/twitter.png">
+        </picture>
+    </li>
+
+    <li class="li">
+        <picture>
+        <source media="(max-width: 786px)" srcset="./assets/youtube.png">
+        <source media="(min-width: 1200px)" srcset="./assets/youtube.png">
+        <img src="./assets/youtube.png">
+        </picture>
+    </li>
+
+    </ul>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
